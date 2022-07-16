@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <h2 class="heading">ADD AssignmentCategory</h2>
+    <title>
+        
+    </title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete= "off">
+                    <div>
+                        <label>Assignment Category</label><label class="validation-error hide" id="AssignmentCategoryValidationError">This field is required.</label>
+                        <input type="text" name="AssignmentCategory" id="AssignmentCategory">
+                    </div>
+                    <div>
+                        <label>Weight(%)</label>
+                        <input type="number" name="Weight" id="Weight">
+                    </div>
+                   
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>AssignmentCategory</th>
+                            <th>Weight(%)</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script1.js"></script>
+</body>
+
+</html>

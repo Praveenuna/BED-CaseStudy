@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <input id="searchbar" onkeyup="search_animal()" type="text"
+		name="search" placeholder="Search AssignmentCategory..">
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete= "off">
+                    <div>
+                        <label>Serial No</label><label class="validation-error hide" id="SerialNoValidationError">This field is required.</label>
+                        <input type="number" name="SerialNo" id="SerialNo">
+                    </div>
+                    <div>
+                        <label>Student Name</label>
+                        <input type="text" name="StudentName" id="StudentName">
+                    </div>
+                    <div>
+                        <label>Subject</label>
+                        <input type="text" name="Subject" id="Subject">
+                    </div>
+                    <div>
+                        <label>Assignment Category</label>
+                        <input type="text" name="AssignmentCategory" id="AssignmentCategory">
+                    </div>
+                    <div>
+                        <label>Date Of Submission</label>
+                        <input type="date" name="DateOfSubmission" id="DateOfSubmission">
+                    </div>
+                    <div>
+                        <label>Points</label>
+                    <input type="number" name="Points" id="Points">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Serial No</th>
+                            <th>Student Name</th>
+                            <th>Subject</th>
+                            <th>Assignment Category</th>
+                            <th>Date Of Submission</th>
+                            <th>Points</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
